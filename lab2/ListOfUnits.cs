@@ -15,7 +15,7 @@ namespace lab2
             this.units = units; /// ссылается на units
         }
 
-        public void Explosion(int explosionPower)
+        public void Explosion(double explosionPower)
         {
             var destroyedUnits = units.Where(unit => unit.RemainingHealthCalculation(explosionPower) <= 0).ToList(); /// преобразование результатов в список
 
